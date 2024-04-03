@@ -9,6 +9,7 @@ contract SetGuardians is DeployCapability {
     uint256 public privateKey = vm.envUint("PRIVATE_KEY");
     address public timelockAddress = vm.envAddress("TIMELOCK_ADDRESS");
     address public guardianProver = vm.envAddress("GUARDIAN_PROVER");
+    uint256 public minGuardians = vm.envUint("MIN_GUARDIANS");
     address[] public guardians = vm.envAddress("GUARDIANS", ",");
 
     function run() external {
@@ -24,7 +25,8 @@ contract SetGuardians is DeployCapability {
     function setGuardiansByTimelock(address timelock) internal {
         bytes32 salt = bytes32(block.timestamp);
 
-        bytes memory payload = abi.encodeCall(Guardians.setGuardians, (guardians, 3));
+        bytes memory payload =
+            abi.encodeCall(Guardians.setGuardians, (guardians, uint8(minGuardians)));
 
         TaikoTimelockController timelockController = TaikoTimelockController(payable(timelock));
 
