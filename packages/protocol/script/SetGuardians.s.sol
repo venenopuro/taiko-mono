@@ -17,7 +17,8 @@ contract SetGuardians is DeployCapability {
 
         vm.startBroadcast(privateKey);
 
-        setGuardiansByTimelock(timelockAddress);
+        // setGuardiansByTimelock(timelockAddress);
+        Guardians(guardianProver).setGuardians(guardians, uint8(minGuardians));
 
         vm.stopBroadcast();
     }
