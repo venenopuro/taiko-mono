@@ -1,5 +1,12 @@
 # Changelog
 
+## [4.0.1](https://github.com/taikoxyz/taiko-mono/compare/bridge-ui-v4.0.0...bridge-ui-v4.0.1) (2024-04-09)
+
+
+### Bug Fixes
+
+* **bridge-ui:** fix ERC721 and ERC1155 detection in NFT bridge ([#16680](https://github.com/taikoxyz/taiko-mono/issues/16680)) ([ca45aa6](https://github.com/taikoxyz/taiko-mono/commit/ca45aa6da6101f15fe9ef4c485e5d61a64f66f84))
+
 ## [4.0.0](https://github.com/taikoxyz/taiko-mono/compare/bridge-ui-v3.0.0...bridge-ui-v4.0.0) (2024-04-04)
 
 
