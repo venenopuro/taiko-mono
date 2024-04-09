@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.1](https://github.com/taikoxyz/taiko-mono/compare/guardian-prover-health-check-ui-v0.1.0...guardian-prover-health-check-ui-v0.1.1) (2024-04-09)
+
+
+### Bug Fixes
+
+* **repo:** typos ([#16589](https://github.com/taikoxyz/taiko-mono/issues/16589)) ([8836e50](https://github.com/taikoxyz/taiko-mono/commit/8836e5029d32ca3c7d45321a8e48910680626704))
+
 ## [0.1.0](https://github.com/taikoxyz/taiko-mono/compare/guardian-prover-health-check-ui-v0.1.0...guardian-prover-health-check-ui-v0.1.0) (2024-02-20)
 
 
